@@ -3,7 +3,7 @@
 {
   imports = [
     # host hardware
-    ./hardware.nix
+    ./hardware-configuration.nix
     ./nvidia.nix
     ./filesystem.nix
 
