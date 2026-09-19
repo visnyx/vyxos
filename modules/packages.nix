@@ -36,7 +36,6 @@
     mpv
     ffmpeg
     losslesscut
-    obs-studio
 
     # social
     vesktop
@@ -68,4 +67,15 @@
     # agy cli
     antigravity-cli
   ];
+  # stuff w options
+
+  # obs
+  programs.obs-studio = {
+    enable = true;
+    plugins = with pkgs.obs-studio-plugins; [
+      obs-wayland-hotkeys
+      obs-vkcapture
+      obs-pipewire-audio-capture
+    ];
+  };
 }
