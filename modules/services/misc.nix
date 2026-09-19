@@ -4,9 +4,8 @@
 
   services.flatpak.enable = true;
 
-  # gui disk management
+  # kde partition manager
   # programs.partition-manager.enable = true;
-  programs.gnome-disks.enable = true;
 
   programs.kdeconnect = {
     enable = true;
