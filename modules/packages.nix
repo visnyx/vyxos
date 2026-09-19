@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -27,7 +27,7 @@
 
     # browsers
     mullvad-browser
-    brave
+    brave-origin
 
     # media
     easyeffects
@@ -65,8 +65,5 @@
 
     # agy cli
     antigravity-cli
-  ] ++ [
-    # zen browser (via omniflake)
-    inputs.omniflake.flakes.zen-browser-flake.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
