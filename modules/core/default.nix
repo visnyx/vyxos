@@ -1,6 +1,7 @@
 { ... }:
 
 {
+  # core modules
   imports = [
     ./nix.nix
     ./boot.nix

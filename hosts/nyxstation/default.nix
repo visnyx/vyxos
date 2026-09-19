@@ -20,11 +20,11 @@
   nix.registry.nixpkgs.flake = inputs.nixpkgs;
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
 
-  # allow unfree and cuda globally
+  # unfree w cuda
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.cudaSupport = true;
 
-  # home-manager
+  # homemanager
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
@@ -33,5 +33,6 @@
     users."nyxee" = import ../../home;
   };
 
+  # dont touch ts (read docs)
   system.stateVersion = "26.05";
 }

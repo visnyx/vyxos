@@ -7,6 +7,6 @@
     dockerCompat = true;
   };
 
-  # nvidia gpu passthrough for containers
+  # gpu "passthrough" for ^
   hardware.nvidia-container-toolkit.enable = true;
 }

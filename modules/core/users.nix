@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  # enable fish system-wide (needed for login shell)
+  # fish
   programs.fish.enable = true;
 
   users.users."nyxee" = {

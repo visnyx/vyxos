@@ -4,8 +4,9 @@
   environment.systemPackages = with pkgs; [
     # terminal
     alacritty
+    ghostty
 
-    # cli utilities
+    # cli utils
     fastfetch
     btop
     killall
@@ -40,7 +41,7 @@
     # social
     vesktop
 
-    # productivity
+    # productivity???
     obsidian
     meld
 
@@ -48,19 +49,20 @@
     upscayl
     blender
 
-    # development
+    # dev
     jq
     python3
     gcc
     glib
     distrobox
     distroshelf
+    pods
     cudatoolkit
 
-    # wayland clipboard
+    # clipboard
     wl-clipboard
 
-    # system hardware control
+    # msi
     mcontrolcenter
 
     # agy cli

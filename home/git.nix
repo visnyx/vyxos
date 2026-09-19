@@ -1,6 +1,7 @@
 { ... }:
 
 {
+  #git
   programs.git = {
     enable = true;
 
@@ -18,7 +19,7 @@
     };
   };
 
-  # git delta (side-by-side diffs)
+  # git delta for diffs??
   programs.delta = {
     enable = true;
     enableGitIntegration = true;

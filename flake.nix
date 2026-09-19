@@ -1,6 +1,6 @@
 {
-  description = "Nyxee NixOS Configuration";
-
+  description = "cool flake ig";
+  # this is kinda readable so ima  keep it like this
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";

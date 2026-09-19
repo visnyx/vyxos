@@ -1,2 +1,8 @@
 result
 result-*
+*~
+*.swp
+.vscode/
+.idea/
+.direnv/
+#hosts/nyxstation/hardware-configuration.nix

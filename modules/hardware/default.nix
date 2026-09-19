@@ -1,6 +1,7 @@
 { ... }:
 
 {
+  #hardware imports
   imports = [
     ./audio.nix
     ./networking.nix

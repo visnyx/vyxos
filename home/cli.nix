@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  # fuzzy finder
+  # fzf search
   programs.fzf = {
     enable = true;
     enableFishIntegration = true;
@@ -12,20 +12,20 @@
     ];
   };
 
-  # smart directory navigation
+  # zoxide
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;
   };
 
-  # modern ls replacement
+  # ls replacement
   programs.eza = {
     enable = true;
     icons = "auto";
     git = true;
   };
 
-  # per-directory environment variables
+  # per dir environment variables
   programs.direnv = {
     enable = true;
     enableFishIntegration = true;
@@ -42,7 +42,7 @@
     ];
   };
 
-  # additional cli tools
+  # other cli tools
   home.packages = with pkgs; [
     nixd
     nixfmt

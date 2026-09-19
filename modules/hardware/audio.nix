@@ -1,10 +1,10 @@
 { ... }:
 
 {
-  # rtkit for realtime audio scheduling
+  # rtkit
   security.rtkit.enable = true;
 
-  # pipewire audio stack
+  # pipewire
   services.pipewire = {
     enable = true;
     alsa.enable = true;

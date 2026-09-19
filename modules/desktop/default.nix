@@ -2,7 +2,8 @@
 
 {
   imports = [
-    ./plasma.nix
+    # ./plasma.nix
+    ./gnome.nix
     ./fonts.nix
   ];
 }

@@ -1,6 +1,7 @@
 { ... }:
 
 {
+  #homemanager imports
   imports = [
     ./shell.nix
     ./editors.nix

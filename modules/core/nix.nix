@@ -24,7 +24,7 @@
     ];
   };
 
-  # nix helper (garbage collection + rebuild wrapper)
+  # nix helper w garbage
   programs.nh = {
     enable = true;
     clean.enable = true;
@@ -32,6 +32,6 @@
     flake = "/home/nyxee/vyxos";
   };
 
-  # run unpatched dynamically-linked binaries
+  # run unpatched binaries
   programs.nix-ld.enable = true;
 }

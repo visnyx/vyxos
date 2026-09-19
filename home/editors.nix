@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  # VS Code editor.
+  # vscode
   programs.vscode = {
     enable = true;
 
@@ -30,7 +30,7 @@
       # Nix extensions.
       jnoortheen.nix-ide
 
-      # Quality of life extensions.
+      # Qol
       pkief.material-icon-theme
       eamodio.gitlens
       usernamehw.errorlens
@@ -40,7 +40,7 @@
     ];
 
     profiles.default.userSettings = {
-      # Aesthetic settings.
+      # ui stuff
       "workbench.iconTheme" = "material-icon-theme";
       "workbench.startupEditor" = "none";
       "workbench.tree.indent" = 14;
@@ -49,7 +49,7 @@
       "window.menuBarVisibility" = "compact";
       "window.titleBarStyle" = "custom";
 
-      # Editor visuals.
+      # visuals
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'Fira Sans', monospace";
       "editor.fontSize" = 13;
       "editor.lineHeight" = 22;
@@ -67,7 +67,7 @@
       "editor.guides.indentation" = true;
       "editor.minimap.enabled" = false;
 
-      # Productivity settings.
+      # useful settings
       "editor.formatOnSave" = true;
       "editor.linkedEditing" = true;
       "editor.suggestSelection" = "recentlyUsed";
@@ -75,11 +75,11 @@
       "files.trimTrailingWhitespace" = true;
       "files.insertFinalNewline" = true;
 
-      # Inline errors.
+      # inline errors
       "errorLens.fontStyleItalic" = true;
       "errorLens.gutterIconsEnabled" = true;
 
-      # Language formatting.
+      # formatting
       "nix.enableLanguageServer" = true;
       "nix.serverPath" = "nixd";
       "nix.formatterPath" = "nixfmt";
@@ -90,8 +90,7 @@
           };
           "options" = {
             "nixos" = {
-              "expr" =
-                "(builtins.getFlake \"/home/nyxee/vyxos\").nixosConfigurations.nyxstation.options";
+              "expr" = "(builtins.getFlake \"/home/nyxee/vyxos\").nixosConfigurations.nyxstation.options";
             };
           };
         };

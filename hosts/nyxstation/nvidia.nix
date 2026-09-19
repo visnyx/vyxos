@@ -4,7 +4,7 @@
   # gpu driver
   services.xserver.videoDrivers = [ "nvidia" ];
 
-  # graphics api support
+  # graphics
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -14,7 +14,7 @@
     ];
   };
 
-  # gpu switching
+  # switchero
   services.switcherooControl.enable = true;
 
   hardware.nvidia = {
@@ -30,7 +30,7 @@
     # dynamic boost
     dynamicBoost.enable = true;
 
-    # optimus offload
+    # optimus
     prime = {
       offload = {
         enable = true;

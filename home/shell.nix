@@ -1,35 +1,35 @@
 { ... }:
 
 {
-  # fish shell
+  # fish
   programs.fish = {
     enable = true;
-    interactiveShellInit = "set -g fish_greeting";
+    interactiveShellInit = "set -g fish_greeting"; # annoying greeting
 
     shellAliases = {
-      # file listing (eza)
+      # files thing
       ls = "eza --icons --group-directories-first";
       ll = "eza -l --icons --group-directories-first --git";
       la = "eza -la --icons --group-directories-first --git";
       lt = "eza --tree --icons --level=2";
 
-      # modern replacements
+      # replacements
       cat = "bat --style=auto";
       grep = "rg";
       find = "fd";
 
-      # navigation
+      # nav
       ".." = "cd ..";
       "..." = "cd ../..";
       "...." = "cd ../../../";
 
-      # nixos management
+      # shortcuts
       rebuild = "nh os switch";
       update = "nh os switch --update";
       garbage = "nh clean all";
       flakeup = "nix flake update --flake /home/nyxee/vyxos";
 
-      # git shortcuts
+      # git
       g = "git";
       gs = "git status";
       ga = "git add";
@@ -54,7 +54,7 @@
     useTheme = "1_shell";
   };
 
-  # bat (cat replacement with syntax highlighting)
+  # bat
   programs.bat = {
     enable = true;
     config = {

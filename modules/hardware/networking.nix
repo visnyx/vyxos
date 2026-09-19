@@ -1,9 +1,10 @@
 { config, ... }:
 
 {
+  #hostname
   networking.hostName = "nyxstation";
 
-  # networkmanager with systemd-resolved dns
+  # networkmanager
   networking.networkmanager = {
     enable = true;
     dns = "systemd-resolved";
@@ -13,10 +14,10 @@
     };
   };
 
-  # don't block boot waiting for network
+  # online skip on boot
   systemd.services.NetworkManager-wait-online.enable = false;
 
-  # dns resolver with dns-over-tls via quad9
+  # dns conf
   services.resolved = {
     enable = true;
     settings.Resolve = {
@@ -28,14 +29,15 @@
 
   hardware.bluetooth.enable = true;
 
-  # firewall with tailscale passthrough
+  # firewall
   networking.firewall = {
     enable = true;
+    #tailscale passthrough
     allowedUDPPorts = [ config.services.tailscale.port ];
     trustedInterfaces = [ "tailscale0" ];
     checkReversePath = "loose";
   };
 
-  # automatic network tuning
+  # network thing
   services.bpftune.enable = true;
 }
