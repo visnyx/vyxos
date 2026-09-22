@@ -45,7 +45,6 @@
     meld
 
     # design
-    upscayl
     blender
 
     # dev
@@ -66,7 +65,9 @@
 
     # agy cli
     antigravity-cli
+
   ];
+
   # stuff w options
 
   # obs
@@ -77,5 +78,14 @@
       obs-vkcapture
       obs-pipewire-audio-capture
     ];
+  };
+
+  # scx loader w lavd
+  services.scx-loader = {
+    enable = true;
+    config = {
+      default_sched = "scx_lavd";
+      # default_mode = "Auto";
+    };
   };
 }

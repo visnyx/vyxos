@@ -9,7 +9,8 @@
   };
 
   # gamemode
-  programs.gamemode.enable = true;
+  # programs.gamemode.enable = true;
+
   # gamescope
   programs.gamescope.enable = true;
 
