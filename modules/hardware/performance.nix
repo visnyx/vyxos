@@ -58,8 +58,12 @@
     rulesProvider = pkgs.ananicy-rules-cachyos_git;
   };
 
-  #services.scx = {
-  #enable = true;
-  # scheduler = "scx_lavd";
-  #};
+  # scx loader
+  services.scx-loader = {
+    enable = true;
+    config = {
+      default_sched = "scx_bpfland";
+      # default_mode = "Auto";
+    };
+  };
 }

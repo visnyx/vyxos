@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -27,8 +27,7 @@
     dnsutils
 
     # browsers
-    mullvad-browser
-    brave-origin
+    firefox
 
     # media
     easyeffects
@@ -53,7 +52,7 @@
     gcc
     glib
     distrobox
-    distroshelf
+    kontainer
     pods
     cudatoolkit
 
@@ -65,7 +64,6 @@
 
     # agy cli
     antigravity-cli
-
   ];
 
   # stuff w options
@@ -78,14 +76,5 @@
       obs-vkcapture
       obs-pipewire-audio-capture
     ];
-  };
-
-  # scx loader w lavd
-  services.scx-loader = {
-    enable = true;
-    config = {
-      default_sched = "scx_lavd";
-      # default_mode = "Auto";
-    };
   };
 }

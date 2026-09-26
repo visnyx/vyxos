@@ -27,8 +27,8 @@
     powerManagement.enable = true;
     powerManagement.finegrained = true;
 
-    # dynamic boost
-    dynamicBoost.enable = true;
+    # dynamic boost (kinda useless ngl)
+    # dynamicBoost.enable = true;
 
     # optimus
     prime = {
