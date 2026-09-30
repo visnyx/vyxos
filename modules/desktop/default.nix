@@ -3,7 +3,8 @@
 {
   imports = [
     ./plasma.nix
-    # ./gnome.nix
     ./fonts.nix
+    ./niri.nix
+    ./deskwl.nix
   ];
 }

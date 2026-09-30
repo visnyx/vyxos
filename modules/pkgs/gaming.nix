@@ -8,12 +8,6 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
-  # gamemode
-  # programs.gamemode.enable = true;
-
-  # gamescope
-  programs.gamescope.enable = true;
-
   # gaming overlays and tools
   environment.systemPackages = with pkgs; [
     mangohud

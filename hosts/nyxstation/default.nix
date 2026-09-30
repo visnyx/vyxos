@@ -2,18 +2,17 @@
 
 {
   imports = [
-    # host hardware
+    # host config
     ./hardware-configuration.nix
     ./nvidia.nix
     ./filesystem.nix
 
-    # system modules
+    # modules
     ../../modules/core
     ../../modules/desktop
     ../../modules/hardware
     ../../modules/services
-    ../../modules/gaming.nix
-    ../../modules/packages.nix
+    ../../modules/pkgs
   ];
 
   # pin nixpkgs for imperative commands
