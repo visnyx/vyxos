@@ -4,7 +4,11 @@
   # pkgs imports
   imports = [
     ./gaming.nix
-    ./imports.nix
-    ./packages.nix
+    ./cli.nix
+    ./desktop.nix
+    ./dev.nix
+    ./media.nix
+    ./productivity.nix
+    ./social.nix
   ];
 }
