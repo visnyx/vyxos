@@ -51,19 +51,32 @@
     AllowSuspendThenHibernate = "no";
   };
 
-  # ananicy with cachyOs rules
+  # ananicy
   services.ananicy = {
     enable = true;
     package = pkgs.ananicy-cpp;
-    rulesProvider = pkgs.ananicy-rules-cachyos_git;
+    rulesProvider = pkgs.ananicy-rules-cachyos;
+
+    extraRules = [
+      # {
+      #   name = "smth";
+      #   type = "Game";
+      # }
+    ];
   };
 
   # scx loader
   services.scx-loader = {
     enable = true;
     config = {
-      default_sched = "scx_bpfland";
-      # default_mode = "Auto";
+      default_sched = "scx_lavd";
+      default_mode = "Auto";
+
+      scheds.scx_lavd = {
+        auto_mode = [ "--autopower" ];
+        gaming_mode = [ "--performance" ];
+        powersave_mode = [ "--powersave" ];
+      };
     };
   };
 }

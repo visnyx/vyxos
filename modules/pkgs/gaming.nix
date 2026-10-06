@@ -13,6 +13,6 @@
     mangohud
     vulkan-tools
     heroic
-    goverlay
+    mission-center
   ];
 }

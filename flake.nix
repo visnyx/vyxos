@@ -3,7 +3,6 @@
   # this is kinda readable so ima  keep it like this
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
 
     home-manager = {
@@ -17,7 +16,6 @@
       self,
       nixpkgs,
       home-manager,
-      chaotic,
       nix-cachyos-kernel,
       ...
     }@inputs:
@@ -29,7 +27,6 @@
           modules = [
             ./hosts/nyxstation
             home-manager.nixosModules.home-manager
-            chaotic.nixosModules.default
             { nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ]; }
           ];
         };

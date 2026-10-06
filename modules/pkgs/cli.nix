@@ -16,6 +16,7 @@
     speedtest-cli
     micro
     lazygit
+    antigravity-cli
 
     # networking tools
     inetutils

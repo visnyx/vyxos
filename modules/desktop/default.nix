@@ -2,11 +2,16 @@
 
 {
   imports = [
+    # misc
+    ./deswl.nix
+    ./fonts.nix
+
+    # DEs
 
     ./plasma.nix
-    ./fonts.nix
-    #./niri.nix
-    #./niripkgs.nix
-    ./deswl.nix
+
+    #./gnome.nix
+
+    #./umbriel.nix
   ];
 }

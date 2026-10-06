@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   # flatpak
@@ -9,7 +9,6 @@
 
   programs.kdeconnect = {
     enable = true;
-    # package = pkgs.gnomeExtensions.gsconnect; # for gnome
     # package = pkgs.valent; # alt gtk app
   };
 

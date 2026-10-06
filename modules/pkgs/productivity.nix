@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # browsers
-    firefox
+    floorp-bin
 
     # productivity
     obsidian

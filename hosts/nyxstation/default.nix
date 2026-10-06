@@ -17,7 +17,7 @@
 
   # pin nixpkgs for imperative commands
   nix.registry.nixpkgs.flake = inputs.nixpkgs;
-  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+  nix.settings.nix-path = [ "nixpkgs=${inputs.nixpkgs}" ];
 
   # unfree w cuda
   nixpkgs.config.allowUnfree = true;

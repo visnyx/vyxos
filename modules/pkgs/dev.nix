@@ -7,7 +7,7 @@
     gcc
     glib
     distrobox
-    kontainer
+    distroshelf
     pods
     cudatoolkit
   ];
