@@ -47,15 +47,12 @@
     kdePackages.kdialog
     bazaar
 
-    darkly
-    kdePackages.qt6ct
+    # theming
 
+    kdePackages.qt6ct
     hicolor-icon-theme
     papirus-icon-theme
     nwg-look
-    bibata-cursors
-    adw-gtk3
-
   ];
 
   environment.pathsToLink = [ "/share/thumbnailers" ];

@@ -53,15 +53,14 @@
 
   # ananicy
   services.ananicy = {
-    enable = true;
     package = pkgs.ananicy-cpp;
     rulesProvider = pkgs.ananicy-rules-cachyos;
 
     extraRules = [
-      # {
-      #   name = "smth";
-      #   type = "Game";
-      # }
+      {
+        name = "smth";
+        type = "Game";
+      }
     ];
   };
 
